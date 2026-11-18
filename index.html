@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Pêcheur</title>
+<style>
+body{background-color:lightblue;font-family:Arial,sans-serif;margin:0;padding:20px;}
+header{text-align:center;}
+nav ul{list-style-type:none;display:flex;justify-content:center;flex-wrap:wrap;padding:0;}
+nav a,.insta{text-decoration:none;margin:10px;background-color:blue;color:white;padding:5px 10px;}
+nav a:hover,.insta:hover{background-color:brown;}
+section{max-width:700px;margin:20px auto;}
+table{border-collapse:collapse;width:300px;}
+td,th{border:1px solid black;padding:6px;text-align:left;}
+ul.menu{list-style-type:square;}
+ol.menu{list-style-type:upper-roman;}
+label{display:block;margin-top:8px;}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Le Pêcheur</h1>
+<p><a class="insta" href="https://www.instagram.com/le_pecheur_sidialimekki?igsh=dnc4eXJzN292dm1i">Visitez-nous sur Instagram</a></p>
+</header>
+
+<nav>
+<ul>
+<li><a href="#entrees">Entrées</a></li>
+<li><a href="#plats">Plats principaux</a></li>
+<li><a href="#prix">Prix</a></li>
+<li><a href="#reservation">Réservation</a></li>
+<li><a href="#avis">Avis</a></li>
+</ul>
+</nav>
+
+<main>
+<section id="entrees">
+<h2>Liste des entrées</h2>
+<ul class="menu">
+<li>Salade César</li>
+<li>Omelette roulée</li>
+<li>Soupe</li>
+<li>Mini bricks</li>
+</ul>
+</section>
+
+<section id="plats">
+<h2>Liste des plats principaux</h2>
+<ol class="menu">
+<li>Riz aux fruits de mer</li>
+<li>Lasagne</li>
+<li>Couscous</li>
+<li>Pâtes</li>
+<li>Ojja</li>
+</ol>
+</section>
+
+<section id="prix">
+<h2>Tableau des prix</h2>
+<table>
+<thead>
+<tr><th>Plat</th><th>Prix (DT)</th></tr>
+</thead>
+<tbody>
+<tr><td>Salade César</td><td>15</td></tr>
+<tr><td>Omelette roulée</td><td>10</td></tr>
+<tr><td>Soupe</td><td>13</td></tr>
+<tr><td>Mini bricks</td><td>5</td></tr>
+<tr><td>Riz aux fruits de mer</td><td>18</td></tr>
+<tr><td>Lasagne</td><td>22</td></tr>
+<tr><td>Couscous</td><td>20</td></tr>
+<tr><td>Pâtes</td><td>14</td></tr>
+<tr><td>Ojja</td><td>8</td></tr>
+</tbody>
+</table>
+</section>
+
+<section id="reservation">
+<h2>Formulaire de réservation</h2>
+<form>
+<fieldset>
+<legend>Vos coordonnées</legend>
+
+<label for="nom">Nom :</label>
+<input id="nom" name="nom" type="text" placeholder="Donnez votre nom">
+
+<label for="numero">Numéro :</label>
+<input id="numero" name="numero" type="tel" placeholder="Donnez votre numéro">
+
+<label for="email">E-mail :</label>
+<input id="email" name="email" type="email" placeholder="Donnez votre e-mail">
+
+<p>
+<input type="radio" id="femme" name="genre" value="femme">
+<label for="femme" style="display:inline">Femme</label>
+<input type="radio" id="homme" name="genre" value="homme">
+<label for="homme" style="display:inline">Homme</label>
+</p>
+
+<button type="submit">Envoyer</button>
+</fieldset>
+</form>
+</section>
+
+<section id="avis">
+<h2>Donnez votre avis</h2>
+<textarea name="message" rows="4" cols="40" placeholder="Votre avis"></textarea>
+</section>
+</main>
+
+</body>
+</html>
